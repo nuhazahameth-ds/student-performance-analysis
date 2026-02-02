@@ -3,8 +3,9 @@
 -- Description: Table creation for analyzing semester-wise performance
 
 CREATE TABLE student_performance (
-    semester NUMBER,
-    subject VARCHAR2(100),
-    credits NUMBER,
-    ca_percentage NUMBER
+    Semester NUMBER,
+    Module VARCHAR2(100),
+    Credits NUMBER,
+    CA_Percentage NUMBER,
+    Results VARCHAR2(5)
 );
