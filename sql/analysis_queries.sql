@@ -75,9 +75,16 @@ FROM student_performance
 GROUP BY results;
 
 --Best & Worst Module (CA%)
+--Best Case
 SELECT Module, CA_Percentage
 FROM student_performance
 ORDER BY CA_Percentage DESC
+FETCH FIRST 1 ROW ONLY;
+
+--Worst case
+SELECT Module, ca_percentage
+FROM student_performance
+ORDER BY ca_percentage
 FETCH FIRST 1 ROW ONLY;
 
 
